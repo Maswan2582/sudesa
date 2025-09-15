@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Panduan Pengguna Aplikasi Silamadesa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #2c3e50;
+            line-height: 1.2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            /* Page break before each new chapter for better PDF printing */
+            page-break-before: always;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #3498db;
+            margin-top: 30px;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #2980b9;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid #f36d33;
+            color: #666;
+            page-break-inside: avoid;
+            font-family: monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 1.6em;
+            max-width: 100%;
+            overflow: auto;
+            padding: 1em 1.5em;
+            display: block;
+            word-wrap: break-word;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        /* Style for the table of contents */
+        .daftar-isi {
+            background-color: #f9f9f9;
+            border: 1px solid #eaeaea;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .daftar-isi h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .daftar-isi p {
+            margin: 5px 0 5px 20px;
+        }
+
+        /* Set first H2 to not have a page break before it */
+        h2:first-of-type {
+            page-break-before: auto;
+        }
+
+        /* Title page styling */
+        .title-page {
+            text-align: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            page-break-after: always;
+        }
+
+        .title-page h1,
+        .title-page h2,
+        .title-page h3 {
+            border: none;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title-page">
+        <h1>BUKU PANDUAN PENGGUNA APLIKASI SILAMADESA</h1>
+        <h2>Sistem Layanan Masyarakat dan Administrasi Desa</h2>
+        <h3>Panduan Lengkap untuk Semua Pengguna</h3>
+    </div>
+
+    <div class="daftar-isi">
+        <h2>DAFTAR ISI</h2>
+
+        <h3>BAB I: PENDAHULUAN</h3>
+        <p>1.1 Tentang Aplikasi Silamadesa</p>
+        <p>1.2 Fitur Utama untuk Setiap Role</p>
+        <p>1.3 Siapa Saja Pengguna Aplikasi</p>
+        <p>1.4 Cara Menggunakan Panduan Ini</p>
+
+        <h3>BAB II: MEMULAI MENGGUNAKAN APLIKASI</h3>
+        <p>2.1 Cara Mengakses Aplikasi</p>
+        <p>2.2 Panduan Login untuk Semua Role</p>
+        <p>2.3 Mengatasi Masalah Login</p>
+        <p>2.4 Mengubah Password</p>
+
+        <h3>BAB III: PANDUAN UNTUK KEPALA DESA (KADES)</h3>
+        <p>3.1 Mengenal Dashboard Kades</p>
+        <p>3.2 Melihat Statistik dan Data Desa</p>
+        <p>3.3 Mengelola Data Warga</p>
+        <p>3.4 Mengatur Pengguna Sistem</p>
+        <p>3.5 Menyetujui Surat dan Dokumen</p>
+        <p>3.6 Membuat Laporan Desa</p>
+        <p>3.7 Tips dan Trik untuk Kades</p>
+
+        <h3>BAB IV: PANDUAN UNTUK SEKRETARIS DESA (SEKDES)</h3>
+        <p>4.1 Mengenal Dashboard Sekdes</p>
+        <p>4.2 Mengelola Surat Menyurat</p>
+        <p>4.3 Melayani Administrasi Warga</p>
+        <p>4.4 Menyiapkan Laporan untuk Kades</p>
+        <p>4.5 Mengelola Backup Data</p>
+        <p>4.6 Koordinasi dengan Staff</p>
+        <p>4.7 Tips dan Trik untuk Sekdes</p>
+
+        <h3>BAB V: PANDUAN UNTUK STAFF DESA</h3>
+        <p>5.1 Mengenal Dashboard Staff Desa</p>
+        <p>5.2 Menambah Data Warga Baru</p>
+        <p>5.3 Mengubah Data Warga</p>
+        <p>5.4 Melayani Pembuatan Surat</p>
+        <p>5.5 Upload dan Kelola Dokumen</p>
+        <p>5.6 Berkomunikasi dengan Warga</p>
+        <p>5.7 Tips Pelayanan yang Baik</p>
+
+        <h3>BAB VI: PANDUAN UNTUK KEPALA DUSUN (KADUS)</h3>
+        <p>6.1 Mengenal Dashboard Kadus</p>
+        <p>6.2 Melihat Data Warga Dusun</p>
+        <p>6.3 Membuat Laporan Dusun</p>
+        <p>6.4 Koordinasi dengan Kantor Desa</p>
+        <p>6.5 Membantu Warga Dusun</p>
+        <p>6.6 Tips Koordinasi Efektif</p>
+
+        <h3>BAB VII: PANDUAN UNTUK WARGA</h3>
+        <p>7.1 Mengenal Dashboard Warga</p>
+        <p>7.2 Melihat dan Mengubah Profile</p>
+        <p>7.3 Melihat Data Keluarga</p>
+        <p>7.4 Mengajukan Surat Online</p>
+        <p>7.5 Mengecek Status Dokumen</p>
+        <p>7.6 Riwayat Pelayanan</p>
+        <p>7.7 Tips untuk Warga</p>
+
+        <h3>BAB VIII: PANDUAN SURAT MENYURAT</h3>
+        <p>8.1 Jenis Surat yang Tersedia</p>
+        <p>8.2 Cara Mengajukan Surat (untuk Warga)</p>
+        <p>8.3 Cara Memproses Surat (untuk Staff)</p>
+        <p>8.4 Cara Menyetujui Surat (untuk Sekdes/Kades)</p>
+        <p>8.5 Mencetak dan Mengambil Surat</p>
+        <p>8.6 Mengatasi Masalah Surat</p>
+
+        <h3>BAB IX: MENGELOLA DATA WARGA</h3>
+        <p>9.1 Panduan untuk Staff: Menambah Warga Baru</p>
+        <p>9.2 Panduan untuk Staff: Mengubah Data Warga</p>
+        <p>9.3 Panduan untuk Warga: Mengecek Data Diri</p>
+        <p>9.4 Panduan untuk Kadus: Data Warga Dusun</p>
+        <p>9.5 Tips Menjaga Keakuratan Data</p>
+
+        <h3>BAB X: LAPORAN DAN STATISTIK</h3>
+        <p>10.1 Cara Melihat Laporan (untuk Kades/Sekdes)</p>
+        <p>10.2 Cara Membuat Laporan Dusun (untuk Kadus)</p>
+        <p>10.3 Cara Melihat Statistik Desa</p>
+        <p>10.4 Mencetak dan Menyimpan Laporan</p>
+
+        <h3>BAB XI: MENGATASI MASALAH UMUM</h3>
+        <p>11.1 Lupa Password</p>
+        <p>11.2 Tidak Bisa Login</p>
+        <p>11.3 Data Tidak Muncul</p>
+        <p>11.4 File Tidak Bisa Upload</p>
+        <p>11.5 Kontak Bantuan</p>
+
+        <h3>BAB XII: TIPS DAN TRIK</h3>
+        <p>12.1 Tips untuk Semua Pengguna</p>
+        <p>12.2 Cara Bekerja Lebih Efisien</p>
+        <p>12.3 Menjaga Keamanan Data</p>
+        <p>12.4 Best Practices</p>
+
+        <h3>LAMPIRAN</h3>
+        <p>A. Kontak dan Bantuan</p>
+        <p>B. Shortcut Keyboard</p>
+        <p>C. Glossary (Istilah Penting)</p>
+        <p>D. Checklist Harian untuk Setiap Role</p>
+    </div>
+
+    <hr>
+
+    <h2>BAB I: PENDAHULUAN</h2>
+
+    <h3>1.1 Tentang Aplikasi Silamadesa</h3>
+    <p>Selamat datang di Aplikasi Silamadesa (Sistem Layanan Masyarakat dan Administrasi Desa)!</p>
+    <p>Aplikasi ini dirancang khusus untuk memudahkan pelayanan administrasi di tingkat desa. Dengan sistem yang
+        terintegrasi, semua kebutuhan administrasi desa dapat dilakukan secara digital, mulai dari pendataan warga
+        hingga pelayanan surat menyurat.</p>
+    <strong>Manfaat Utama:</strong>
+    <ul>
+        <li>✅ Pelayanan administrasi yang lebih cepat dan mudah</li>
+        <li>✅ Data warga yang tersimpan aman dan terorganisir</li>
+        <li>✅ Komunikasi yang lebih baik antara pemerintah desa dan warga</li>
+        <li>✅ Laporan otomatis untuk keperluan administrasi</li>
+        <li>✅ Transparansi dalam pelayanan publik</li>
+    </ul>
+
+    <h3>1.2 Fitur Utama untuk Setiap Role</h3>
+    <p>Aplikasi Silamadesa memiliki 5 jenis pengguna utama, masing-masing dengan fitur dan tanggung jawab yang berbeda:
+    </p>
+
+    <h4>🏛️ <strong>KEPALA DESA (KADES)</strong></h4>
+    <p>Sebagai pemimpin desa, Anda memiliki akses untuk:</p>
+    <ul>
+        <li><strong>Dashboard Monitoring</strong> - Pantau statistik desa dan aktivitas sistem secara real-time</li>
+        <li><strong>Menyetujui Surat Penting</strong> - Memberikan persetujuan untuk surat yang memerlukan approval
+            Kades</li>
+        <li><strong>Melihat Data Penduduk</strong> - Akses read-only untuk melihat data warga desa</li>
+        <li><strong>Laporan dan Statistik</strong> - Mengakses berbagai laporan untuk pengambilan keputusan</li>
+        <li><strong>Monitoring Aktivitas</strong> - Memantau kinerja pelayanan dan aktivitas sistem</li>
+    </ul>
+
+    <h4>📋 <strong>SEKRETARIS DESA (SEKDES)</strong></h4>
+    <p>Sebagai koordinator administrasi, Anda berperan untuk:</p>
+    <ul>
+        <li><strong>Proses Surat Menyurat</strong> - Memproses, mereview, dan konfirmasi surat sebelum dikirim ke Kades
+        </li>
+        <li><strong>Koordinasi Pelayanan</strong> - Mengatur dan memantau workflow pelayanan administrasi</li>
+        <li><strong>Manajemen Sistem</strong> - Backup data, manajemen pengguna, dan pengaturan sistem</li>
+        <li><strong>Laporan Operasional</strong> - Membuat dan mengirim laporan rutin kepada Kades</li>
+        <li><strong>Quality Control</strong> - Memastikan kualitas dan standar pelayanan terjaga</li>
+    </ul>
+
+    <h4>👥 <strong>STAFF DESA</strong></h4>
+    <p>Sebagai pelayan masyarakat langsung, Anda fokus pada:</p>
+    <ul>
+        <li><strong>CRUD Data Warga</strong> - Menambah, mengubah, dan mengelola data penduduk secara lengkap</li>
+        <li><strong>Pembuatan Surat</strong> - Membuat berbagai jenis surat administrasi untuk warga</li>
+        <li><strong>Verifikasi Pembayaran PBB</strong> - Memverifikasi dan mengelola data pembayaran PBB warga</li>
+        <li><strong>Manajemen File</strong> - Upload, download, dan mengelola dokumen serta file penting</li>
+        <li><strong>Chat dan Komunikasi</strong> - Berkomunikasi dengan warga melalui sistem chat dalam aplikasi</li>
+    </ul>
+
+    <h4>🏘️ <strong>KEPALA DUSUN (KADUS)</strong></h4>
+    <p>Sebagai koordinator tingkat dusun, Anda bertugas:</p>
+    <ul>
+        <li><strong>CRUD Data Warga Dusun</strong> - Mengelola data warga khusus di dusun yang Anda pimpin</li>
+        <li><strong>Monitoring Wilayah</strong> - Memantau perkembangan dan kondisi warga di dusun Anda</li>
+        <li><strong>Laporan Dusun</strong> - Membuat laporan berkala tentang kondisi dan kegiatan dusun</li>
+        <li><strong>Koordinasi dengan Desa</strong> - Menjadi penghubung antara warga dusun dengan kantor desa</li>
+        <li><strong>Pelayanan Warga Dusun</strong> - Membantu warga dusun dalam keperluan administrasi</li>
+    </ul>
+
+    <h4>🏠 <strong>WARGA</strong></h4>
+    <p>Sebagai masyarakat desa, Anda dapat:</p>
+    <ul>
+        <li><strong>Kelola Profile Pribadi</strong> - Melihat dan mengupdate data diri serta keluarga</li>
+        <li><strong>Ajukan Surat Online</strong> - Mengajukan permohonan surat administrasi secara online</li>
+        <li><strong>Upload Pembayaran PBB</strong> - Upload bukti pembayaran PBB dan pajak lainnya</li>
+        <li><strong>Chat dengan Perangkat Desa</strong> - Berkomunikasi langsung dengan staff desa melalui chat</li>
+        <li><strong>Riwayat Akses</strong> - Melihat history aktivitas dan pelayanan yang pernah Anda terima</li>
+    </ul>
+
+    <h3>1.3 Siapa Saja Pengguna Aplikasi</h3>
+    <p><strong>🎯 Panduan ini dibuat khusus untuk 5 jenis pengguna:</strong></p>
+    <ol>
+        <li><strong>Kepala Desa (Kades)</strong> - Pemimpin desa dengan akses penuh sistem</li>
+        <li><strong>Sekretaris Desa (Sekdes)</strong> - Koordinator administrasi dan surat menyurat</li>
+        <li><strong>Staff Desa</strong> - Petugas pelayanan langsung kepada masyarakat</li>
+        <li><strong>Kepala Dusun (Kadus)</strong> - Koordinator tingkat dusun/wilayah</li>
+        <li><strong>Warga</strong> - Masyarakat desa yang memerlukan pelayanan administrasi</li>
+    </ol>
+
+    <h3>1.4 Cara Menggunakan Panduan Ini</h3>
+    <p><strong>📖 Tips Membaca Panduan:</strong></p>
+    <ul>
+        <li>✅ <strong>Baca Sesuai Role Anda</strong> - Fokus pada BAB yang sesuai dengan posisi Anda</li>
+        <li>✅ <strong>Ikuti Langkah Demi Langkah</strong> - Setiap panduan disusun secara bertahap</li>
+        <li>✅ <strong>Praktek Langsung</strong> - Coba setiap langkah sambil membaca panduan</li>
+        <li>✅ <strong>Bookmark Bagian Penting</strong> - Tandai halaman yang sering Anda butuhkan</li>
+        <li>✅ <strong>Hubungi Admin Jika Bingung</strong> - Jangan ragu bertanya jika ada yang tidak jelas</li>
+    </ul>
+
+    <p><strong>🔍 Simbol dalam Panduan:</strong></p>
+    <ul>
+        <li>✅ = Hal yang harus dilakukan</li>
+        <li>❌ = Hal yang harus dihindari</li>
+        <li>💡 = Tips dan trik berguna</li>
+        <li>⚠️ = Peringatan penting</li>
+        <li>📋 = Checklist atau langkah-langkah</li>
+        <li>🎯 = Fokus utama</li>
+        <li>📞 = Kontak bantuan</li>
+    </ul>
+
+    <p><strong>Untuk Pemula:</strong> Mulai dengan BAB II (Login) lalu lanjut ke BAB sesuai role Anda.<br>
+        <strong>Untuk yang Sudah Mahir:</strong> Langsung ke BAB spesifik yang Anda butuhkan.
+    </p>
+
+    <h4>E. Dashboard Analytics</h4>
+    <ul>
+        <li>Statistik kependudukan real-time</li>
+        <li>Grafik dan chart interaktif</li>
+        <li>Laporan pelayanan</li>
+        <li>Monitoring aktivitas sistem</li>
+    </ul>
+
+    <h4>F. Sistem Backup dan Security</h4>
+    <ul>
+        <li>Backup otomatis database dan file</li>
+        <li>Audit trail lengkap</li>
+        <li>Enkripsi data sensitif</li>
+        <li>Multi-factor authentication</li>
+    </ul>
+
+    <h3>1.3 Pengguna Aplikasi (Duplikat)</h3>
+    <p><strong>1. Kepala Desa (Kades)</strong></p>
+    <ul>
+        <li>Dashboard executive summary</li>
+        <li>Approval dokumen penting</li>
+        <li>Laporan strategis</li>
+    </ul>
+    <p><strong>2. Sekretaris Desa (Sekdes)</strong></p>
+    <ul>
+        <li>Manajemen administrasi</li>
+        <li>Koordinasi pelayanan</li>
+        <li>Backup sistem</li>
+        <li>Laporan operasional</li>
+    </ul>
+    <p><strong>3. Staff Desa</strong></p>
+    <ul>
+        <li>Input data warga</li>
+        <li>Pelayanan masyarakat</li>
+        <li>Pembuatan surat</li>
+        <li>Update data rutin</li>
+    </ul>
+    <p><strong>4. Kepala Dusun (Kadus)</strong></p>
+    <ul>
+        <li>Data warga dusun</li>
+        <li>Laporan wilayah</li>
+        <li>Koordinasi dengan desa</li>
+        <li>Monitoring dusun</li>
+    </ul>
+    <p><strong>5. Warga</strong></p>
+    <ul>
+        <li>Profile pribadi</li>
+        <li>Data keluarga</li>
+        <li>Riwayat pelayanan</li>
+        <li>Status dokumen</li>
+    </ul>
+
+    <h3>1.4 Persyaratan Sistem</h3>
+    <p><strong>Server Requirements:</strong></p>
+    <ul>
+        <li>PHP 8.1 atau lebih tinggi</li>
+        <li>MySQL 8.0 atau MariaDB 10.3</li>
+        <li>Apache/Nginx Web Server</li>
+        <li>SSL Certificate (HTTPS)</li>
+        <li>Minimum 2GB RAM</li>
+        <li>Minimum 10GB Storage</li>
+    </ul>
+    <p><strong>Browser Requirements:</strong></p>
+    <ul>
+        <li>Google Chrome (Recommended)</li>
+        <li>Mozilla Firefox</li>
+        <li>Microsoft Edge</li>
+        <li>Safari (Mac)</li>
+    </ul>
+    <p><strong>Network Requirements:</strong></p>
+    <ul>
+        <li>Koneksi internet stabil</li>
+        <li>Bandwidth minimum 1 Mbps</li>
+        <li>Port 80/443 terbuka</li>
+    </ul>
+
+    <hr>
+
+    <h2>BAB II: MEMULAI MENGGUNAKAN APLIKASI</h2>
+
+    <h3>2.1 Cara Mengakses Aplikasi</h3>
+    <p><strong>🌐 Alamat Website</strong><br>
+        Untuk mengakses aplikasi Silamadesa, buka browser favorit Anda dan ketik alamat website yang telah diberikan
+        oleh admin desa.</p>
+    <p>Contoh: <code>https://silamadesa-desaanda.com</code> atau <code>http://localhost/silamadesa</code></p>
+
+    <p><strong>📱 Browser yang Disarankan:</strong></p>
+    <ul>
+        <li>✅ Google Chrome (Terbaik)</li>
+        <li>✅ Mozilla Firefox</li>
+        <li>✅ Microsoft Edge</li>
+        <li>✅ Safari (untuk Mac)</li>
+    </ul>
+    <p>⚠️ <strong>Penting:</strong> Pastikan koneksi internet stabil untuk pengalaman terbaik</p>
+
+    <h3>2.2 Panduan Login untuk Semua Role</h3>
+    <p><strong>📋 Langkah-langkah Login:</strong></p>
+    <p><strong>1. Buka Halaman Login</strong></p>
+    <ul>
+        <li>Klik alamat website aplikasi</li>
+        <li>Anda akan diarahkan ke halaman login otomatis</li>
+        <li>Jika tidak, klik tombol "Login" di pojok kanan atas</li>
+    </ul>
+    <p><strong>2. Masukkan Informasi Login</strong><br>
+        Anda dapat login dengan 2 cara:</p>
+    <p><strong>Cara 1: Login dengan Email</strong></p>
+    <ul>
+        <li>Masukkan email lengkap (contoh: <code>john@gmail.com</code>)</li>
+        <li>Masukkan password</li>
+    </ul>
+    <p><strong>Cara 2: Login dengan NIK</strong> <em>(Lebih Mudah)</em></p>
+    <ul>
+        <li>Masukkan hanya nomor NIK (contoh: <code>1234567890123456</code>)</li>
+        <li>Masukkan password</li>
+        <li>✅ Tidak perlu menambahkan "@" atau domain</li>
+    </ul>
+    <p><strong>3. Klik Tombol "Login"</strong></p>
+
+    <h3>2.3 Panduan Login untuk Setiap Role</h3>
+
+    <h4>🏛️ Login untuk KEPALA DESA (KADES)</h4>
+    <pre><code>Username: NIK Kades atau email@kades.com
+Password: [Password yang diberikan admin]</code></pre>
+    <p><strong>Setelah Login:</strong> Anda akan masuk ke Dashboard Kades dengan akses lengkap</p>
+
+    <h4>📋 Login untuk SEKRETARIS DESA (SEKDES)</h4>
+    <pre><code>Username: NIK Sekdes atau email@sekdes.com
+Password: [Password yang diberikan admin]</code></pre>
+    <p><strong>Setelah Login:</strong> Dashboard Sekdes dengan fokus administrasi dan surat</p>
+
+    <h4>👥 Login untuk STAFF DESA</h4>
+    <pre><code>Username: NIK Staff atau email@staff.com
+Password: [Password yang diberikan admin]</code></pre>
+    <p><strong>Setelah Login:</strong> Dashboard Staff untuk pelayanan warga</p>
+
+    <h4>🏘️ Login untuk KEPALA DUSUN (KADUS)</h4>
+    <pre><code>Username: NIK Kadus atau email@kadus.com
+Password: [Password yang diberikan admin]</code></pre>
+    <p><strong>Setelah Login:</strong> Dashboard Kadus untuk data dusun</p>
+
+    <h4>🏠 Login untuk WARGA</h4>
+    <pre><code>Username: NIK Anda (16 digit)
+Password: [Password default atau yang sudah diubah]</code></pre>
+    <p><strong>Setelah Login:</strong> Dashboard Warga untuk layanan personal</p>
+
+    <h3>2.4 Mengatasi Masalah Login</h3>
+    <p><strong>❌ Problem: "Username atau Password Salah"</strong><br>
+        ✅ <strong>Solusi:</strong></p>
+    <ol>
+        <li>Pastikan NIK diketik dengan benar (16 digit)</li>
+        <li>Periksa CAPS LOCK tidak aktif</li>
+        <li>Coba login dengan email jika ada</li>
+        <li>Hubungi admin desa untuk reset password</li>
+    </ol>
+
+    <p><strong>❌ Problem: "Akun Tidak Ditemukan"</strong><br>
+        ✅ <strong>Solusi:</strong></p>
+    <ol>
+        <li>Pastikan Anda sudah terdaftar di sistem</li>
+        <li>Hubungi staff desa untuk pendaftaran</li>
+        <li>Cek apakah NIK sudah diinput ke sistem</li>
+    </ol>
+
+    <p><strong>❌ Problem: "Akun Diblokir/Nonaktif"</strong><br>
+        ✅ <strong>Solusi:</strong></p>
+    <ol>
+        <li>Hubungi sekretaris desa</li>
+        <li>Minta aktivasi ulang akun</li>
+        <li>Tanyakan alasan pemblokiran</li>
+    </ol>
+
+    <p><strong>❌ Problem: "Website Tidak Bisa Dibuka"</strong><br>
+        ✅ <strong>Solusi:</strong></p>
+    <ol>
+        <li>Periksa koneksi internet</li>
+        <li>Coba refresh halaman (F5)</li>
+        <li>Coba browser lain</li>
+        <li>Hubungi admin IT desa</li>
+    </ol>
+
+    <h3>2.5 Mengubah Password</h3>
+    <p><strong>🔒 Cara Ubah Password (Untuk Semua Role):</strong></p>
+    <p><strong>1. Login ke Aplikasi</strong></p>
+    <ul>
+        <li>Masuk dengan username dan password lama</li>
+    </ul>
+    <p><strong>2. Buka Profile Anda</strong></p>
+    <ul>
+        <li>Klik nama Anda di pojok kanan atas</li>
+        <li>Pilih "Profile" atau "Edit Profile"</li>
+    </ul>
+    <p><strong>3. Ubah Password</strong></p>
+    <ul>
+        <li>Masukkan password lama</li>
+        <li>Masukkan password baru (minimal 8 karakter)</li>
+        <li>Ulangi password baru</li>
+        <li>Klik "Simpan"</li>
+    </ul>
+
+    <p><strong>💡 Tips Password Aman:</strong></p>
+    <ul>
+        <li>Gunakan kombinasi huruf besar, kecil, angka</li>
+        <li>Minimal 8 karakter</li>
+        <li>Jangan gunakan tanggal lahir atau NIK</li>
+        <li>Ganti password secara berkala</li>
+    </ul>
+
+    <h3>2.6 Logout dari Aplikasi</h3>
+    <p><strong>📤 Cara Logout yang Benar:</strong></p>
+    <ol>
+        <li>Klik nama Anda di pojok kanan atas</li>
+        <li>Pilih "Logout" atau "Keluar"</li>
+        <li>Konfirmasi logout</li>
+        <li>Anda akan kembali ke halaman login</li>
+    </ol>
+    <p>⚠️ <strong>Penting:</strong> Selalu logout setelah selesai menggunakan aplikasi, terutama di komputer umum.</p>
+
+    <h3>2.7 Tips Keamanan untuk Semua Pengguna</h3>
+    <p><strong>🔐 Tips Menjaga Keamanan Akun:</strong></p>
+    <p>✅ <strong>Selalu Logout</strong> setelah selesai<br>
+        ✅ <strong>Jangan Share Password</strong> dengan orang lain<br>
+        ✅ <strong>Ganti Password Berkala</strong> (minimal 3 bulan sekali)<br>
+        ✅ <strong>Gunakan Browser Update</strong> untuk keamanan terbaik<br>
+        ✅ <strong>Jangan Login di Warnet</strong> untuk data sensitif</p>
+
+    <p>❌ <strong>Jangan Lakukan:</strong></p>
+    <ul>
+        <li>❌ Biarkan aplikasi terbuka tanpa pengawasan</li>
+        <li>❌ Simpan password di browser umum</li>
+        <li>❌ Login menggunakan WiFi publik untuk data penting</li>
+        <li>❌ Share screenshot yang berisi data pribadi</li>
+    </ul>
+
+    <hr>
+
+    <h2>BAB III: PANDUAN UNTUK KEPALA DESA (KADES)</h2>
+
+    <h3>3.1 Mengenal Dashboard Kades</h3>
+    <p><strong>🏛️ Selamat Datang di Dashboard Kepala Desa!</strong></p>
+    <p>Sebagai Kepala Desa, Dashboard Anda memberikan gambaran lengkap tentang kondisi desa.</p>
+
+    <p><strong>📊 Yang Anda Lihat di Dashboard:</strong></p>
+    <p><strong>A. Ringkasan Statistik Desa</strong></p>
+    <ul>
+        <li>👥 Total Jumlah Warga</li>
+        <li>🏠 Total Kepala Keluarga</li>
+        <li>📊 Statistik Usia (Anak, Dewasa, Lansia)</li>
+        <li>👫 Perbandingan Laki-laki dan Perempuan</li>
+        <li>📍 Sebaran per Dusun</li>
+    </ul>
+
+    <p><strong>B. Aktivitas Terbaru</strong></p>
+    <ul>
+        <li>📝 Surat yang perlu persetujuan Anda</li>
+        <li>👤 User baru yang terdaftar</li>
+        <li>📋 Laporan dari Kepala Dusun</li>
+        <li>🔄 Update data warga terbaru</li>
+    </ul>
+
+    <p><strong>C. Grafik dan Chart</strong></p>
+    <ul>
+        <li>📈 Trend pertumbuhan penduduk</li>
+        <li>🏘️ Sebaran warga per dusun</li>
+        <li>📊 Statistik pelayanan bulanan</li>
+        <li>💹 Data PBB dan pajak</li>
+    </ul>
+
+    <h3>3.2 Melihat Statistik dan Data Desa</h3>
+    <p><strong>📊 Cara Melihat Data Lengkap Desa:</strong></p>
+    <p><strong>1. Akses Dashboard Kades</strong></p>
+    <ul>
+        <li>Login dengan akun Kades Anda</li>
+        <li>Dashboard akan menampilkan ringkasan statistik utama</li>
+        <li>Gunakan widget dan grafik untuk melihat tren data</li>
+    </ul>
+
+    <p><strong>2. Jenis Data yang Bisa Anda Lihat:</strong></p>
+    <p><strong>📈 Data Demografis:</strong></p>
+    <ul>
+        <li>Total penduduk berdasarkan usia dan jenis kelamin</li>
+        <li>Sebaran penduduk per dusun</li>
+        <li>Statistik perkembangan kependudukan</li>
+        <li>Grafik piramida penduduk</li>
+    </ul>
+
+    <p><strong>🏘️ Data Per Dusun:</strong></p>
+    <ul>
+        <li>Jumlah warga per dusun dengan visualisasi chart</li>
+        <li>Perbandingan antar dusun dalam bentuk grafik</li>
+        <li>Statistik pertumbuhan per wilayah</li>
+        <li>Monitoring aktivitas per dusun</li>
+    </ul>
+
+    <p><strong>📊 Data Pelayanan:</strong></p>
+    <ul>
+        <li>Statistik surat yang telah disetujui</li>
+        <li>Trend pelayanan bulanan dalam bentuk grafik</li>
+        <li>Tingkat efisiensi pelayanan per kategori surat</li>
+        <li>Monitor antrian approval yang memerlukan persetujuan Anda</li>
+    </ul>
+
+    <p><strong>3. Export dan Laporan</strong></p>
+    <ul>
+        <li>Akses menu "Laporan" untuk berbagai jenis laporan</li>
+        <li>Download laporan dalam format PDF atau Excel</li>
+        <li>Generate laporan custom sesuai periode yang diinginkan</li>
+        <li>Gunakan data untuk rapat BPD dan perencanaan desa</li>
+    </ul>
+
+    <p><strong>💡 Catatan:</strong> Dashboard Kades berfungsi sebagai monitoring dan approval center. Untuk management
+        pengguna dan fungsi administratif lainnya, koordinasikan dengan Sekretaris Desa yang memiliki akses penuh untuk
+        pengelolaan sistem.</p>
+
+    <hr>
+
+    <p style="text-align:center; font-style:italic;">© 2025 Silamadesa - Sistem Informasi Layanan Masyarakat dan
+        Administrasi Desa dan
+        Administrasi Desa<br>
+        Versi Panduan: 2.1.0<br>
+        Tanggal Update: September 2025</p>
+
+</body>
+
+</html>

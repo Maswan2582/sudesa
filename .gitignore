@@ -1,0 +1,37 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+# SPT Upload files - should not be committed
+/public/uploads/laporan_spt/
+/storage/app/public/laporan_spt/
+
+# Development/Debug files
+migrate_spt_files.php
+migrate_spt_simple.php
+test_hosting_storage.php
+test_file_access.php
+test_spt_url.php
+spt_url_test.html
+fix_spt_storage.php
+routing_debug.php
+storage_debug.php
+monitor_hosting.php
+datatable_test.php
+public/test_spt_access.html
